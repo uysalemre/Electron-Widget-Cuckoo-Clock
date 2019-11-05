@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+
+    <div id="tokenshow" style="display:none;">
+      Give me token from browser
+      <input type="text" id="gettoken"></input>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li><a id="displayweather"  onclick="displayClock()">Clock</a></li>
+        <li><a id="displayeventschedule" onclick="displayEvents()">Events</a></li>
+      </ul>
+    </div>
+
+    <div id="clock">
+      <div class="hour"> 
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+      </div>
+      <div class="hour">
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+        <div class="min"></div>
+      </div>
+      <div id="min"></div>
+      <div id="hour"></div>
+      <div id="sec"></div>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+    <script  src="../js/script.js"></script>
+    <div id="date" >
+      <ul>
+        <li><p id="day"></p></li>
+        <li><p id="month"></p></li>
+        <li><p id="year"></p></li>
+      </ul>
+    </div>
+
+    <div id="weatherforecast">
+      <img id="weatherforecastimage" src="https://w.bookcdn.com/weather/picture/13_18319_1_1_ffffff_158_fff5d9_333333_08488D_3_fff5d9_333333_0_6.png?scode=2&domid=w209&anc_id=41069"  alt="weather"/>
+    </div>
+
+    <div id="alarmer" >
+      <ul>
+        <li><p>Set Alarm(hour:min:sec)<input type="text" class="alarm-time"></p></li>
+      </ul>
+    </div>
+
+ 
+
+    <div id="eventscheduler" style = "display:none" align="center">
+    <table>
+      <tr>
+        <th>Event</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td class="event1"></td>
+        <td class="time1"></td>
+        <td><a id="alarmclick1"></a></td>
+      </tr>
+      <tr>
+        <td class="event2"></td>
+        <td class="time2"></td>
+        <td><a id="alarmclick2"></a></td>
+      </tr>
+      <tr>
+        <td class="event3"></td>
+        <td class="time3"></td>
+        <td><a id="alarmclick3"></a></td>
+      </tr>
+      <tr>
+        <td class="event4"></td>
+        <td class="time4"></td>
+        <td><a id="alarmclick4"></a></td>
+      </tr>
+      <tr>
+        <td class="event5"></td>
+        <td class="time5"></td>
+        <td><a id="alarmclick5"></a></td>
+      </tr>
+      <tr>
+        <td class="event6"></td>
+        <td class="time6"></td>
+        <td><a id="alarmclick6"></a></td>
+      </tr>
+      <tr>
+        <td class="event7"></td>
+        <td class="time7"></td>
+        <td><a id="alarmclick7"></a></td>
+      </tr>
+      <tr>
+        <td class="event8"></td>
+        <td class="time8"></td>
+        <td><a id="alarmclick8"></a></td>
+      </tr>
+      <tr>
+        <td class="event9"></td>
+        <td class="time9"></td>
+        <td><a id="alarmclick9"></a></td>
+      </tr>
+      <tr>
+        <td class="event10"></td>
+        <td class="time10"></td>
+        <td><a id="alarmclick10"></a></td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="event-adder" style="display:none;">
+      <p align="center" id="event-status">Add A New Event</p>
+      Event: <input type="text"  id="eventnamedata">
+      <br>
+      Start: <input type="time" id="starttimedata" >
+      Start Date: <input type="date" id="startdatedata">
+      <br>
+      End: <input type="time" id="endtimedata" >
+      End Date: <input type="date" id="enddatedata">
+      <br>
+      <input type="submit" value="ADD" class="submitdata">      
+    </div>
+    <script src="../../googleauthy.js"></script>
+  </body>
+</html>
